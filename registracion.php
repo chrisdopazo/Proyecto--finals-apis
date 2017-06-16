@@ -22,7 +22,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 else{
 
- $CheckSQL = "SELECT * FROM userinfo WHERE email='$email'";
+ $CheckSQL = "SELECT * FROM usuario WHERE email='$email'";
  
  $check = mysqli_fetch_array(mysqli_query($con,$CheckSQL));
  
@@ -32,9 +32,9 @@ else{
 
  }
 else{ 
-$Sql_Query = "INSERT INTO userinfo (nombre,apellido,email,password) values ('$nombre','$apellido','$email','$password')";
+$Sql_Query = "INSERT INTO usuario (nombre,apellido,email,password) values ('$nombre','$apellido','$email','$password')";
 
- if(mysqli_query($con,$Sql_Query))
+ if(mysqli_query($conn,$Sql_Query))
 {
  echo 'Cuenta Creada . Muchas Gracias!';
 }
