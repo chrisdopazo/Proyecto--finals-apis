@@ -8,12 +8,5 @@ $DatabaseName = "127.0.0.1:53358";
 
 $conn = new mysqli($HostName, $HostUser, $HostPass, $DatabaseName);
 
-if ($conn) {
- 
- echo "bien";
-} 
-else
-{
-	echo "mal"
-}
+echo "hoal2";
 ?>
