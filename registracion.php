@@ -1,5 +1,5 @@
 <?php
-echo "dbrabsurh es qkwjrbnwqeiufhbasdfvbsaduifnasofnm";
+
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
 
