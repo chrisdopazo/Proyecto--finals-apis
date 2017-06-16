@@ -1,4 +1,5 @@
 <?php
+echo "dbrabsurh es qkwjrbnwqeiufhbasdfvbsaduifnasofnm";
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
 
@@ -10,7 +11,7 @@ include 'conn.php';
  $apellido = $_POST['apellido'];
  $email = $_POST['email'];
  $password = $_POST['password'];
- $saldo = $_POST['saldo']
+
 
  
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -32,9 +33,9 @@ else{
 
  }
 else{ 
-$Sql_Query = "INSERT INTO usuario (nombre,apellido,email,password) values ('$nombre','$apellido','$email','$password')";
+$Sql_Query = "INSERT INTO usuario (nombre,apellido,email,password) values ('$nombre','$apellido','$email','$password)";
 
- if(mysqli_query($conn,$Sql_Query))
+ if(mysqli_query($con,$Sql_Query))
 {
  echo 'Cuenta Creada . Muchas Gracias!';
 }
