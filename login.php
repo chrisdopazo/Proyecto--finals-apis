@@ -9,7 +9,7 @@
  $email = $_POST['email'];
  $password = $_POST['password'];
  
- $Sql_Query = "select * from userinfo where email = '$email' and password = '$password' ";
+ $Sql_Query = "select * from usuario where email = '$email' and password = '$password' ";
  
  $check = mysqli_fetch_array(mysqli_query($con,$Sql_Query));
  
