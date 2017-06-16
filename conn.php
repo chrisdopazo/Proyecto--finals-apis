@@ -8,5 +8,4 @@ $DatabaseName = "127.0.0.1:53358";
 
 $conn = new mysqli($HostName, $HostUser, $HostPass, $DatabaseName);
 
-echo "hoal2";
 ?>
