@@ -33,6 +33,6 @@ else
  echo 'Hubo un Error . Intente de Nuevo';
  }
 }
-
+}
  mysqli_close($conn);
 ?>
