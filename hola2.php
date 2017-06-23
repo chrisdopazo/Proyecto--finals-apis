@@ -1,4 +1,6 @@
-    if($_SERVER['REQUEST_METHOD']=='POST'){
+<?php   
+
+   if($_SERVER['REQUEST_METHOD']=='POST'){
 
 include 'conn.php';
 
@@ -22,3 +24,4 @@ include 'conn.php';
       echo "Error en la registración. ";
     }
     }
+	?>
