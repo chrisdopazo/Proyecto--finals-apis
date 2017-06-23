@@ -33,7 +33,7 @@ else{
 
  }
 else{ 
-$Sql_Query = "INSERT INTO usuario (nombre,apellido,email,password) values ('$nombre','$apellido','$email','$password)";
+$Sql_Query = "INSERT INTO usuario (nombre,apellido,email,password) values ('$nombre','$apellido','$email','$password')";
 
  if(mysqli_query($con,$Sql_Query))
 {
