@@ -10,11 +10,7 @@ include 'conn.php';
  $nombre = $_POST['nombre'];
 
  
-if (strlen(trim($nombre)) < 8)) {
-  echo  "Ingrese un Email Correcto"; 
-  die;
-}
-else{
+
 
  $CheckSQL = "SELECT * FROM sala WHERE nombre='$nombre'";
  
@@ -36,8 +32,6 @@ else
 {
  echo 'Hubo un Error . Intente de Nuevo';
  }
- }
-}
 }
 
  mysqli_close($conn);
