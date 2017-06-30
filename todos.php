@@ -8,7 +8,7 @@ if ($conn->connect_error) {
  die("Conneccion Falllida: " . $conn->connect_error);
 } 
 
-$sql = "SELECT * FROM userinfo";
+$sql = "SELECT * FROM usuario";
 
 $result = $conn->query($sql);
 
