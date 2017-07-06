@@ -8,6 +8,7 @@ include 'conn.php';
  $con = mysqli_connect($HostName,$HostUser,$HostPass,$DatabaseName);
 
  $nombre = $_POST['nombre'];
+ $juego = $_POST['juego'];
 
  
 
@@ -18,11 +19,11 @@ include 'conn.php';
  
  if(isset($check)){
 
- echo 'Ya hay una sala este Email';
+ echo 'Ya hay una sala con este nombre';
 
  }
 else{ 
-$Sql_Query = "INSERT INTO sala (nombre) values ('$nombre')";
+$Sql_Query = "INSERT INTO sala (nombre,juego) values ('$nombre' , '$juego')";
 
  if(mysqli_query($con,$Sql_Query))
 {
@@ -34,5 +35,4 @@ else
  }
 }
 }
- mysqli_close($conn);
 ?>
