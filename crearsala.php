@@ -23,7 +23,7 @@ include 'conn.php';
 
  }
 else{ 
-$Sql_Query = "INSERT INTO sala (nombre,juego,idUsuario1,idUsuario2,ApuUsu1,ApuUsu2,idUsuGanador,Resultado) values ('$nombre','$juego')";
+$Sql_Query = "INSERT INTO sala (nombre,juego,idUsuario1,idUsuario2,ApuUsu1,ApuUsu2,idUsuGanador,Resultado) values ('$nombre','$juego','0','0','0','0','0','0')";
 
  if(mysqli_query($con,$Sql_Query))
 {
